@@ -10,7 +10,7 @@ import {
 import toast from "react-hot-toast";
 import cn from "../lib/utils";
 
-const ContactProject = () => {
+const ContactSection = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
 
@@ -38,24 +38,28 @@ const ContactProject = () => {
   };
 
   return (
-    <section id="contact" className="p-24 px-24 relative bg-secondary/30">
+    <section id="contact" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          Get In <span className="text-primary">Touch</span>
+          Get In <span className="text-primary"> Touch</span>
         </h2>
-        <p className="text-center text-muted-foreground  mb-12 max-w-2xl mx-auto">
+
+        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
           Have a project in mind or want to collaborate? Feel free to reach out.
           I'm always open to discussing new opportunities.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-8">
-            <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
+            <h3 className="text-2xl font-semibold mb-6">
+              {" "}
+              Contact Information
+            </h3>
 
-            <div className="space-y-8 justify-center">
+            <div className="space-y-6 justify-center">
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Mail className="h-6 w-6 text-primary" />
+                  <Mail className="h-6 w-6 text-primary" />{" "}
                 </div>
                 <div>
                   <h4 className="font-medium"> Email</h4>
@@ -63,36 +67,32 @@ const ContactProject = () => {
                     href="mailto:hello@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    koushikachar2017@gmail.com
+                    hello@gmail.com
                   </a>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Phone className="h-6 w-6 text-primary" />
+                  <Phone className="h-6 w-6 text-primary" />{" "}
                 </div>
                 <div>
-                  <h4 className="font-medium"> Phone Number</h4>
+                  <h4 className="font-medium"> Phone</h4>
                   <a
-                    href="mailto:hello@gmail.com"
+                    href="tel:+11234567890"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    {" "}
-                    +91 6389390433
+                    +1 (123) 456-7890
                   </a>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <MapPin className="h-6 w-6 text-primary" />
+                  <MapPin className="h-6 w-6 text-primary" />{" "}
                 </div>
                 <div>
                   <h4 className="font-medium"> Location</h4>
-                  <a
-                    href="mailto:hello@gmail.com"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    Kundapura, Karnataka,India
+                  <a className="text-muted-foreground hover:text-primary transition-colors">
+                    Vancouver, BC, Canada
                   </a>
                 </div>
               </div>
@@ -131,8 +131,8 @@ const ContactProject = () => {
                   id="name"
                   name="name"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden  focus:ring-primary"
-                  placeholder="Enter Your Name..."
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
+                  placeholder="Pedro Machado..."
                 />
               </div>
 
@@ -149,7 +149,7 @@ const ContactProject = () => {
                   id="email"
                   name="email"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden  focus:ring-primary"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
                   placeholder="john@gmail.com"
                 />
               </div>
@@ -166,10 +166,11 @@ const ContactProject = () => {
                   id="message"
                   name="message"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden  focus:ring-primary resize-none"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary resize-none"
                   placeholder="Hello, I'd like to talk about..."
                 />
               </div>
+
               <button
                 type="submit"
                 className={cn(
@@ -187,4 +188,4 @@ const ContactProject = () => {
   );
 };
 
-export default ContactProject;
+export default ContactSection;
