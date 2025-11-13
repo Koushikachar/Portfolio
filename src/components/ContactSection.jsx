@@ -67,7 +67,7 @@ const ContactSection = () => {
                     href="mailto:hello@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    hello@gmail.com
+                    koushikachar25@gmail.com
                   </a>
                 </div>
               </div>
@@ -81,7 +81,7 @@ const ContactSection = () => {
                     href="tel:+11234567890"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +1 (123) 456-7890
+                    +91 3456788384
                   </a>
                 </div>
               </div>
@@ -92,7 +92,7 @@ const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Location</h4>
                   <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Vancouver, BC, Canada
+                    Udupi,Karnataka India
                   </a>
                 </div>
               </div>
